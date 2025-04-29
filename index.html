@@ -1,20 +1,31 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Campaign Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
   <body class="min-h-screen bg-white">
     <div class="bg-gray-100">
-      <header class="flex w-full items-center justify-between px-8 py-5 sm:px-12 lg:px-16">
-        <div class="text-xl font-medium text-teal-500">nowfluence</div>
+      <header
+        class="flex w-full items-center justify-between px-8 py-5 sm:px-12 lg:px-16"
+      >
+        <a href="#" class="text-xl font-medium text-teal-500">nowfluence</a>
         <div class="flex items-center gap-4 sm:gap-6">
-          <a href="#" class="font-medium text-gray-800">Sign Up</a>
-          <a href="#" class="text-teal-400">Login</a>
+          <button
+            class="font-medium text-gray-800"
+            onclick="openModal('signUpModal')"
+          >
+            Sign Up
+          </button>
+          <button class="text-teal-400" onclick="openModal('loginModal')">
+            Login
+          </button>
         </div>
       </header>
 
@@ -23,22 +34,53 @@
           <div class="space-y-4 sm:space-y-6">
             <div>
               <p class="mb-1 text-sm text-gray-600">Brand Name</p>
-              <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl">Campaign Title Here</h1>
+              <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl">
+                Campaign Title Here
+              </h1>
             </div>
 
-            <p class="text-sm leading-relaxed text-gray-600">Lorem ipsum dolor amet, consectetur adipiscing elit. Lacus fermentum odio phasellus cras id erat parturient. Class at et lorem quam ac inceptos netus fermentum vehicula? Duis libero penatibus ante ultrices mattis. Virus dui placerat egestas ex rhoncus per elit est. Nisi maecenas curabitur, ultricies auctor bibendum pretium facilisis. Nascetur malesuada sed suscipit consequat tempus molestie turpis posuere</p>
+            <p class="text-sm leading-relaxed text-gray-600">
+              Lorem ipsum dolor amet, consectetur adipiscing elit. Lacus
+              fermentum odio phasellus cras id erat parturient. Class at et
+              lorem quam ac inceptos netus fermentum vehicula? Duis libero
+              penatibus ante ultrices mattis. Virus dui placerat egestas ex
+              rhoncus per elit est. Nisi maecenas curabitur, ultricies auctor
+              bibendum pretium facilisis. Nascetur malesuada sed suscipit
+              consequat tempus molestie turpis posuere
+            </p>
 
-            <p class="text-sm leading-relaxed text-gray-600">Habitant tortor integer dui blandit leo aenean. Metus facili praesent malesuada orci vitae tempus vehicula sollicitudin. Morbi pharetra vestibulum metus; dui efficitur magnis quis class. Finibus auctor maximus, donec rutrum condimentum curabitur commodo? Himenaeos congue nam per sollicitudin maximus ex nostra enim ridiculus. Ipsum litora elit mi aenean vitae parturient tempor aliquam tempor. Justo maximus cursus accumsan at aenean penatibus maecenas.</p>
+            <p class="text-sm leading-relaxed text-gray-600">
+              Habitant tortor integer dui blandit leo aenean. Metus facili
+              praesent malesuada orci vitae tempus vehicula sollicitudin. Morbi
+              pharetra vestibulum metus; dui efficitur magnis quis class.
+              Finibus auctor maximus, donec rutrum condimentum curabitur
+              commodo? Himenaeos congue nam per sollicitudin maximus ex nostra
+              enim ridiculus. Ipsum litora elit mi aenean vitae parturient
+              tempor aliquam tempor. Justo maximus cursus accumsan at aenean
+              penatibus maecenas.
+            </p>
 
-            <div class="flex flex-wrap items-center gap-3 sm:gap-4">
-              <div class="text-sm text-gray-600">Requested Start Date: MM/DD/YYYY</div>
-              <button class="flex items-center gap-2 rounded border border-gray-300 bg-white px-3 py-2 text-sm sm:px-4"><span>+</span> View Campaign Brief</button>
+            <div class="mb-2 flex flex-wrap items-center gap-14 sm:gap-14">
+              <div class="text-sm font-bold text-black">
+                Requested Start Date: MM/DD/YYYY
+              </div>
+              <button
+                class="flex items-center gap-2 rounded-md border border-black bg-white px-3 py-1 text-sm font-bold sm:px-4"
+              >
+                <i class="fas fa-eye text-blue-300"></i> View Campaign Brief
+              </button>
             </div>
           </div>
 
-          <div class="relative aspect-[4/3] overflow-hidden rounded-xl sm:aspect-auto">
-            <div class="relative h-full">
-              <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600&auto=format&fit=crop" alt="Fitness image showing person lifting weights" class="h-full w-full object-cover" />
+          <div
+            class="relative aspect-[4/3] overflow-hidden rounded-xl shadow-md shadow-gray-600 sm:aspect-auto"
+          >
+            <div class="relative h-full w-full">
+              <img
+                src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600&auto=format&fit=crop"
+                alt="Fitness image showing person lifting weights"
+                class="h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -47,49 +89,216 @@
 
     <div class="mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
       <div class="mb-12 pt-12 lg:mb-16">
-        <h2 class="mb-8 text-2xl font-bold text-gray-900 sm:text-3xl lg:mb-10">Deliverables Requested</h2>
+        <h2 class="mb-8 text-2xl font-bold text-gray-900 sm:text-3xl lg:mb-10">
+          Deliverables Requested
+        </h2>
         <div class="space-y-8">
           <div class="flex flex-col items-center">
-            <div class="mx-auto flex max-w-2xl flex-wrap items-center justify-center md:flex-nowrap">
-              <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-purple-500 via-pink-500 to-yellow-500 sm:h-12 sm:w-12">
-                <i class="fab fa-instagram text-xl text-white sm:text-2xl"></i>
-              </div>
-              <h3 class="ml-4 w-24 shrink-0 bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text text-lg font-medium text-transparent md:w-32">Instagram</h3>
-              <p class="mt-2 ml-0 text-sm text-gray-600 md:mt-0 md:ml-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis nisl feugiat.</p>
+            <div
+              class="mx-auto flex max-w-xl flex-wrap items-center justify-center md:flex-nowrap"
+            >
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="flex items-center gap-2"
+              >
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-purple-500 via-pink-500 to-yellow-500 sm:h-12 sm:w-12"
+                >
+                  <i
+                    class="fab fa-instagram text-xl text-white sm:text-2xl"
+                  ></i>
+                </div>
+                <h3
+                  class="ml-4 w-24 shrink-0 cursor-pointer bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text text-lg font-medium text-transparent md:w-32"
+                >
+                  Instagram
+                </h3>
+              </a>
+              <p class="mt-2 ml-0 text-base text-gray-600 md:mt-0 md:ml-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                quis nisl feugiat.
+              </p>
             </div>
           </div>
 
           <div class="flex flex-col items-center">
-            <div class="mx-auto flex max-w-2xl flex-wrap items-center justify-center md:flex-nowrap">
-              <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-black sm:h-12 sm:w-12">
-                <i class="fab fa-tiktok text-xl text-white sm:text-2xl"></i>
-              </div>
-              <h3 class="ml-4 w-24 shrink-0 text-lg font-medium text-gray-800 md:w-32">Tiktok</h3>
-              <p class="mt-2 ml-0 text-sm text-gray-600 md:mt-0 md:ml-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis nisl feugiat.</p>
+            <div
+              class="mx-auto flex max-w-xl flex-wrap items-center justify-center md:flex-nowrap"
+            >
+              <a
+                href="https://www.tiktok.com"
+                target="_blank"
+                class="flex items-center gap-2"
+              >
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded-xl bg-black sm:h-12 sm:w-12"
+                >
+                  <i class="fab fa-tiktok text-xl text-white sm:text-2xl"></i>
+                </div>
+                <h3
+                  class="ml-4 w-24 shrink-0 cursor-pointer text-lg font-medium text-gray-800 md:w-32"
+                >
+                  Tiktok
+                </h3>
+              </a>
+              <p class="mt-2 ml-0 text-base text-gray-600 md:mt-0 md:ml-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                quis nisl feugiat.
+              </p>
             </div>
           </div>
 
           <div class="flex flex-col items-center">
-            <div class="mx-auto flex max-w-2xl flex-wrap items-center justify-center md:flex-nowrap">
-              <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-600 sm:h-12 sm:w-12">
-                <i class="fab fa-youtube text-xl text-white sm:text-2xl"></i>
-              </div>
-              <h3 class="ml-4 w-24 shrink-0 text-lg font-medium text-red-600 md:w-32">Youtube</h3>
-              <p class="mt-2 ml-0 text-sm text-gray-600 md:mt-0 md:ml-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis nisl feugiat.</p>
+            <div
+              class="mx-auto flex max-w-xl flex-wrap items-center justify-center md:flex-nowrap"
+            >
+              <a
+                href="https://www.youtube.com"
+                target="_blank"
+                class="flex items-center gap-2"
+              >
+                <div
+                  class="flex h-10 w-10 items-center justify-center rounded-xl bg-red-600 sm:h-12 sm:w-12"
+                >
+                  <i class="fab fa-youtube text-xl text-white sm:text-2xl"></i>
+                </div>
+                <h3
+                  class="ml-4 w-24 shrink-0 cursor-pointer text-lg font-medium text-red-600 md:w-32"
+                >
+                  Youtube
+                </h3>
+              </a>
+              <p class="mt-2 ml-0 text-base text-gray-600 md:mt-0 md:ml-8">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                quis nisl feugiat.
+              </p>
             </div>
           </div>
         </div>
       </div>
       <div class="mb-12 lg:mb-16">
-        <h2 class="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">Additional Information</h2>
-        <p class="text-sm leading-relaxed text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In the pursuit of excellence, individuals often find themselves driven by a desire to push boundaries, unlocking new potential within themselves. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua—a phrase that reminds us of the diligence and effort required to achieve greatness</p>
+        <h2 class="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl">
+          Additional Information
+        </h2>
+        <p class="text-sm leading-relaxed text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In the
+          pursuit of excellence, individuals often find themselves driven by a
+          desire to push boundaries, unlocking new potential within themselves.
+          Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua—a
+          phrase that reminds us of the diligence and effort required to achieve
+          greatness
+        </p>
       </div>
 
       <div class="mx-auto mb-12 w-full max-w-2xl text-center lg:mb-16">
-        <h2 class="mb-4 text-2xl font-bold text-teal-900 sm:mb-6 sm:text-3xl">Interested in this Campaign?</h2>
+        <h2 class="mb-4 text-2xl font-bold text-teal-900 sm:mb-6 sm:text-3xl">
+          Interested in this Campaign?
+        </h2>
         <p class="mb-6 sm:mb-8">Apply here to participate in the campaign:</p>
-        <button class="rounded-full bg-gradient-to-r from-teal-400 to-blue-500 px-8 py-2.5 font-medium text-white transition-colors hover:bg-gradient-to-r hover:from-teal-500 hover:to-blue-600 sm:px-12 sm:py-3">Apply</button>
+        <button
+          class="cursor-pointer rounded-full bg-gradient-to-r from-teal-400 to-blue-500 px-8 py-2.5 font-medium text-white transition-colors hover:bg-gradient-to-r hover:from-teal-500 hover:to-blue-600 sm:px-12 sm:py-3"
+          onclick="showInProgressAlert()"
+        >
+          Apply
+        </button>
       </div>
     </div>
+
+    <div
+      id="signUpModal"
+      class="bg-opacity-75 fixed inset-0 z-50 flex hidden items-center justify-center bg-gray-500"
+    >
+      <div class="w-1/3 rounded-lg bg-white p-6">
+        <h3 class="text-center text-2xl font-bold">Sign Up</h3>
+        <form>
+          <div class="mt-4">
+            <label class="block text-sm font-bold text-gray-700">Name</label>
+            <input
+              type="text"
+              class="mt-2 w-full rounded border border-gray-300 p-2"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="block text-sm font-bold text-gray-700">Email</label>
+            <input
+              type="email"
+              class="mt-2 w-full rounded border border-gray-300 p-2"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="block text-sm font-bold text-gray-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="mt-2 w-full rounded border border-gray-300 p-2"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="mt-4 w-full rounded bg-blue-500 py-2 text-white"
+          >
+            Sign Up
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      id="loginModal"
+      class="bg-opacity-75 fixed inset-0 z-50 flex hidden items-center justify-center bg-gray-500"
+    >
+      <div class="w-1/3 rounded-lg bg-white p-6">
+        <h3 class="text-center text-2xl font-bold">Login</h3>
+        <form>
+          <div class="mt-4">
+            <label class="block text-sm font-bold text-gray-700"
+              >Username</label
+            >
+            <input
+              type="text"
+              class="mt-2 w-full rounded border border-gray-300 p-2"
+              placeholder="Enter your username"
+            />
+          </div>
+          <div class="mt-4">
+            <label class="block text-sm font-bold text-gray-700"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="mt-2 w-full rounded border border-gray-300 p-2"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="mt-4 w-full rounded bg-blue-500 py-2 text-white"
+          >
+            Login In
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function showInProgressAlert() {
+        setTimeout(() => {
+          alert("IN PROGRESS");
+        }, 100);
+      }
+
+      function openModal(modalId) {
+        document.getElementById(modalId).classList.remove("hidden");
+      }
+
+      function closeModal(modalId) {
+        document.getElementById(modalId).classList.add("hidden");
+      }
+    </script>
   </body>
 </html>
